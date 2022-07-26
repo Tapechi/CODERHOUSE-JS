@@ -1,0 +1,127 @@
+let ejemplo=0; /* Nombrar una variable */
+const ejemplo1=0; /* Nombrar una constante  */
+console.log("lo que quieras ver") /*mostrar un valor en la consola*/
+
+
+//If
+if (expresión) { 
+ 
+ } else { 
+   
+ }
+
+
+ //Function simple (aplicar iva)
+ function calcularIva (precio) {            
+    let precioConIva = precio * 1.21;
+    console.log ("El precio con Iva es :" + precioConIva)  
+ }
+
+ calcularIva () //Estoy llamano a la Funcion
+
+
+ //function compleja ( aplicar descuento)
+ function calcularDescuento(total,descuento) {
+    let desc=(total*descuento)/100;
+    let totalConDescuento=total - desc;
+    return  totalConDescuento ;
+ }
+
+ let totalConDescuento = calcularDescuento (1200,50);
+ console.log ( "total con descuento $" + totalConDescuento)
+
+ 
+ //funcion cauculadora
+ function calculadora(primerNumero, segundoNumero, operacion) {
+    switch (operacion) {
+        case "+":
+            return primerNumero + segundoNumero;
+        case "-":
+            return primerNumero - segundoNumero;
+        case "*":
+            return primerNumero * segundoNumero;
+        case "/":
+            return primerNumero / segundoNumero;
+        default:
+            return 0;
+    }
+}
+console.log(calculadora(10, 5, "*"));
+
+
+//objetos
+
+//literalas
+
+const miMouse = {   //nomobramos al objeto y le damos propiedades
+    color:"azul",
+    marca:"logitech",
+    wireless:true,
+    modelo:"m280",
+}
+console.log(miMouse) //muestra el objeto en la consola 
+console.log("la marca de mi mouse es " + miMouse.color) //asi se llama un apropiedad dentro del objeto 
+
+miMouse.color="rojo"; //modifica el color del mouse
+console.log("Nuevo color de mouse: "+miMouse.color) //llama al color del mouse
+
+
+//funcion constructora 
+/*
+function Automovil(marca,modelo,anio,color){
+    this.marca=marca;
+    this.modelo=modelo;
+    this.anio=anio;
+    this.color=color;
+    this.encender=()=>{alert("Alerta :" + this.marca + "El automovil se acaba de encerder PRRRUNNN")};
+
+}
+
+const auto1=new Automovil("Peugeot","208",2019,"black")
+const auto2=new Automovil("VW","amarok",2012,"white")
+
+console.log(auto1)
+console.log(auto2)
+auto2.encender();
+*/
+
+
+//clases 
+class Bicicleta{
+    contructor (marca,rodado,color,condicion){
+        this.marca=marca;
+        this.rodado=rodado;
+        this.marca=marca;
+        this.condicion=condicion;
+    }
+    
+    mostrarBicicleta(){
+        alert("marca:"+this.marca+"Rodado:"+this.rodado+"Color: "+this.color+"Condicion"+this.condicion);
+    }
+} 
+
+const bici1=new Bicicleta("roleigh",26,"rojo","nueva");
+const bici2=new Bicicleta("Olmo",25,"azul","usada");
+
+console.log(bici1);
+
+//for..IN
+for(const prop in auto1){
+    console.log("Propiedadesd de mi auto1")
+}
+
+
+
+
+    
+
+
+//Metodo de String
+
+let frase="no todo lo que brilla es oro ";
+console.log(frase.toUpperCase()); //trasforma todo en mayuscula
+console.log(frase.toLowerCase()) // trasforma todo en minisculas
+
+
+
+
