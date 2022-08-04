@@ -1,4 +1,5 @@
 
+/* 
 const tortas=[
     {
         id:"1",
@@ -146,4 +147,5 @@ calcularCuota ();
 
  */
       
+
     

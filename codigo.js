@@ -53,7 +53,32 @@ do {
     }
     document.write(`</div>`)
 
-    /*poco stock menos de 3 productos
+
+ //BUSCADOR
+ 
+ var buscar = prompt("Que producto queres buscar?");
+ var prodBuscado = arrayProductos.filter(producto => producto.nombre.includes(buscar));
+ document.write("<h3> Lista de productos buscados </h3>");
+
+ for (var producto of prodBuscado) {
+    debugger;
+    document.write(`<div class="card"><ul><li><h3> Nombre: ${producto.nombre} </li></h3>`);
+    document.write("<li><h3> Detalle: " + producto.detalle + " </li></h3>");
+ }
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*poco stock menos de 3 productos
 
 var pocoStock = arrayProductos.filter(producto => producto.cantidad <= 3);
 console.log("Producto con poco stock: ");
@@ -68,4 +93,4 @@ for(var producto of pocoStock) {
 
 /sumar productos
 
-/agrupar por detalle / categoria
+/agrupar por detalle / categoria */
