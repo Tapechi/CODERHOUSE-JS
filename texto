@@ -195,6 +195,12 @@ if (expresión) {
 console.log(calculadora(10, 5, "*"));
 
 
+//arrows function
+const sumarIva = (precio) => {return precio *1.21}
+//recive un parametro en este caso Precio y retorna algo. en este caso suma el iva.
+
+
+
 //objetos
 
 //literalas
@@ -269,5 +275,26 @@ console.log(frase.toUpperCase()); //trasforma todo en mayuscula
 console.log(frase.toLowerCase()) // trasforma todo en minisculas
 
 
+//Arrays - sugerencia usar siempre const y no var
+const arrayA = [];
+const arrayB = [1,2]; //array de numneros
+const arrayC = ["c1","c2","c3"]; //array de strings
+const arrayD = [true,false]; //array de booleandos
+const arrayE = [1,false,"c4"]; //array mixtos
 
+
+//Metodos de arrives .
+
+//length 
+//Push
+//unshift
+//shift
+//Pop
+//Reverse
+//join
+//concat
+//slice
+//splice
+//indexOf
+//include
 

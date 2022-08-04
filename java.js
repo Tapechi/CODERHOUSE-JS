@@ -1,4 +1,57 @@
 
+const tortas=[
+    {
+        id:"1",
+        nombre:"Torta de chocolate",
+        Tipo:"Torta",
+        precio:1000
+        
+    },
+    {
+        id:"2",
+        nombre:"Milk cake",
+        Tipo:"Torta",
+        precio:2000
+        
+    },
+    {
+        id:"3",
+        nombre:"Torta de chocolate blanco",
+        Tipo:"Torta",
+        precio:3000
+        
+    },
+    {
+        id:"4",
+        nombre:"Torta de Miga",
+        Tipo:"Torta",
+        precio:4000,
+        
+    }
+
+];
+
+function pedirNombre (){
+    let nombre = prompt ("ingresa tu nombre");
+    alert ("Bienvenido "+ nombre)
+};
+pedirNombre ();
+
+
+for(const torta of tortas){
+    alert(torta.nombre);
+};
+
+
+
+
+
+
+
+
+
+/* 
+
 function agregarTortas () {
 
 }
@@ -12,8 +65,9 @@ function pedirNombre (){
 pedirNombre ();
 
 function elegirTuTorta (){
-    let torta=prompt (("ELEGI TU TORTA INGRESANDO EL NUMERO DE LA MISMA \n1-Torta con chocolate $5000\n2-Milk cake chocolate milca $5500\n3-Torta de miga $4000\n4-Cheescake $3500\n5-Torta Oreo $4000\nIngrese (s) para salir"))
     
+    
+    let torta=prompt (("ELEGI TU TORTA INGRESANDO EL NUMERO DE LA MISMA \n1-Torta con chocolate $5000\n2-Milk cake chocolate milca $5500\n3-Torta de miga $4000\n4-Cheescake $3500\n5-Torta Oreo $4000\nIngrese (s) para salir"))
     let tortasElegidas="";
     
 
@@ -79,17 +133,17 @@ function calcularCuota (){
                 alert("Abonaras $" + precio/Cuotas + " por cuota")
                 break;
             default:
-                alert ("Esa cantidad de cuotas no esta disponible");
+                alert ("Esa cantidad de cuo tas no esta disponible");
                  break;
 
         }
-     alert ("Gracias por tu compra"); 
+     alert ("Gracias por tu compra" + nombre ); 
      break;
     }
 }
 
 calcularCuota ();
 
-
+ */
       
     
